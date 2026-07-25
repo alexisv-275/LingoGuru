@@ -92,34 +92,7 @@
         }
     }catch(_e){}</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col">
 
-    <!-- Top Navigation Bar -->
-    <nav class="bg-surface dark:bg-on-background shadow-sm dark:bg-surface-container-highest docked full-width top-0 z-50">
-        <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-base w-full max-w-7xl mx-auto">
-            <!-- Brand Logo -->
-            <div class="font-display-lg text-display-lg font-extrabold text-primary dark:text-primary-fixed-dim tracking-tight hidden md:block">
-                LingoGuru
-            </div>
-            <div class="font-headline-lg-mobile text-headline-lg-mobile font-extrabold text-primary dark:text-primary-fixed-dim md:hidden">
-                LingoGuru
-            </div>
-
-            <!-- Trailing Actions -->
-            <div class="flex items-center gap-4">
-                <button class="text-on-surface-variant hover:text-primary-container transition-colors active:scale-95 transition-transform" aria-label="Help">
-                    <span class="material-symbols-outlined" data-icon="help">help</span>
-                </button>
-                <button class="text-on-surface-variant hover:text-primary-container transition-colors active:scale-95 transition-transform" aria-label="Home">
-                    <span class="material-symbols-outlined" data-icon="home">home</span>
-                </button>
-                <button class="text-on-surface-variant hover:text-primary-container transition-colors active:scale-95 transition-transform" aria-label="Settings">
-                    <span class="material-symbols-outlined" data-icon="settings">settings</span>
-                </button>
-                <button class="text-on-surface-variant hover:text-primary-container transition-colors active:scale-95 transition-transform" aria-label="Account">
-                    <span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
-                </button>
-            </div>
-        </div>
-    </nav>
+    <div id="site-header"></div>
 
     <!-- Main Content Area -->
     <main class="flex-grow flex flex-col items-center justify-start w-full px-margin-mobile md:px-margin-desktop py-md md:py-lg max-w-5xl mx-auto">
@@ -187,4 +160,5 @@
             <!-- Bottom Action Area -->
             <div class="w-full flex items-center border-t border-surface-container-high pt-8 mt-auto z-10 justify-end">
                 
-                </div></div></main></body></html>
+                </div></div></main><script src="header-component.js"></script>
+</body></html>

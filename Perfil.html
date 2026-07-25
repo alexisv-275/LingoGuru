@@ -117,25 +117,7 @@
     </style>
 </head>
 <body class="bg-background text-on-surface font-body-md min-h-screen">
-<!-- TopNavBar -->
-<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface dark:bg-surface-dim shadow-sm">
-<div class="flex items-center gap-base cursor-pointer active:opacity-70">
-<img class="w-10 h-10" data-alt="A stylized, friendly owl logo mascot for a language learning app called LingoGuru. The owl is bright blue with large expressive eyes and a small orange beak, set against a clean white background. The brand name LingoGuru is written next to it in a bold, modern Plus Jakarta Sans font in primary blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1JtCABwx0WNjb0u5-kY96BYA3An3MMSK-B5X_hURIng0Z1owffL3wBbfdiTyPca-YMT7gMKINP9R0kVx3SZwLYoZ-9xJLg_3fBPleedGrRZZXs6N8wnroce2cwq41QqfVdI3CJPCxDr8R65f_Z4UGyuR11wXrqC9U9pBoVdoSZWtE2BdD-IvWde41U_Sdn_F0_ODMZrw1hfVP1qy6UEUFspG0UdchpfBY5nUnJJogFgZ4OsfX5esu6d5QLOSkYLMfyFrW70yo_UNQ"/>
-<span class="text-title-md font-title-md font-extrabold text-primary">LingoGuru</span>
-</div>
-<nav class="hidden md:flex items-center gap-gutter h-full">
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer active:opacity-70" href="#">Home</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer active:opacity-70" href="#">Help</a>
-</nav>
-<div class="flex items-center gap-md">
-<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer active:opacity-70">help</button>
-<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer active:opacity-70">home</button>
-<button class="material-symbols-outlined text-primary border-b-2 border-primary pb-1 transition-colors cursor-pointer active:opacity-70">settings</button>
-<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant cursor-pointer active:scale-95">
-<img class="w-full h-full object-cover" data-alt="A high-quality professional portrait avatar of a young woman with a friendly smile. She has dark hair and is wearing a simple neutral-colored top. The lighting is soft and natural, emphasizing a bright and approachable personality consistent with a corporate modern education app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyhizOQq1tzrYDxNxaPAbtKoRUGOEndKkXj2EqHjUALLWloYG1IxfL0l6Xx8mYq3yVC6dO5VTViKRxoUojgkq2JljdVY8nwO5Q9lx4eQv-GDJmnEALapoKb975rUDuoNIzAZvMki7vODpT8b1PA0CpQY2g8g4avlIyR-v6lNenLIRlcfCyqz84Vfjil1Y3NWAchDDKpr1_XSpXHFoVk2vOjPWXeUkeKCRxm8NTLBuXCdnpaCYwBV4ox_ZoCtoqSrqsUnQ3WIIpBoFA"/>
-</div>
-</div>
-</header>
+<div id="site-header"></div>
 <main class="pt-24 pb-20 md:pb-12 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto flex flex-col md:flex-row gap-gutter">
 <!-- Left Column: Profile Card & Sidebar -->
 <aside class="w-full md:w-80 flex flex-col gap-gutter">
@@ -297,4 +279,5 @@
             });
         });
     </script>
+<script src="header-component.js"></script>
 </body></html>

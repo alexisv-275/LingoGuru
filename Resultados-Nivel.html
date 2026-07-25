@@ -127,28 +127,7 @@
     </style>
 </head>
 <body class="bg-background text-on-surface min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<header class="bg-surface shadow-sm sticky top-0 z-50">
-<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-base w-full max-w-7xl mx-auto">
-<div class="flex items-center gap-xs">
-<span class="font-display-lg text-[24px] font-extrabold text-primary">LingoGuru</span>
-</div>
-<div class="flex items-center gap-md">
-<button class="text-on-surface-variant hover:text-primary transition-colors active:scale-95">
-<span class="material-symbols-outlined">help</span>
-</button>
-<button class="text-on-surface-variant hover:text-primary transition-colors active:scale-95">
-<span class="material-symbols-outlined">home</span>
-</button>
-<button class="text-on-surface-variant hover:text-primary transition-colors active:scale-95">
-<span class="material-symbols-outlined">settings</span>
-</button>
-<button class="text-on-surface-variant hover:text-primary transition-colors active:scale-95">
-<span class="material-symbols-outlined">account_circle</span>
-</button>
-</div>
-</nav>
-</header>
+<div id="site-header"></div>
 <main class="flex-grow flex items-center justify-center p-margin-mobile md:p-lg">
 <!-- Results Container -->
 <div class="w-full max-w-4xl bg-surface-container-lowest rounded-[32px] results-card-shadow overflow-hidden animate-pop">
@@ -250,4 +229,5 @@
             }
         });
     </script>
+<script src="header-component.js"></script>
 </body></html>
