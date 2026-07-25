@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="en" class="light"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#2c4ed3",
+                        "surface-container-highest": "#e2e2e5",
+                        "surface-bright": "#f9f9fc",
+                        "primary-container": "#4a69ed",
+                        "on-primary-fixed-variant": "#0435be",
+                        "on-primary-fixed": "#001257",
+                        "on-primary-container": "#fffbff",
+                        "on-tertiary-fixed-variant": "#663e00",
+                        "on-secondary-fixed-variant": "#005228",
+                        "inverse-surface": "#2f3133",
+                        "on-tertiary-fixed": "#2b1700",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#a46700",
+                        "on-surface": "#1a1c1e",
+                        "on-background": "#1a1c1e",
+                        "surface-variant": "#e2e2e5",
+                        "on-tertiary-container": "#fffbff",
+                        "secondary-fixed": "#6bfe9c",
+                        "outline": "#747686",
+                        "secondary-container": "#6bfe9c",
+                        "outline-variant": "#c4c5d7",
+                        "tertiary-fixed-dim": "#ffb961",
+                        "on-secondary-container": "#00743a",
+                        "surface-dim": "#dadadc",
+                        "surface": "#f9f9fc",
+                        "surface-container": "#eeeef0",
+                        "surface-container-low": "#f3f3f6",
+                        "tertiary": "#835100",
+                        "inverse-primary": "#b9c3ff",
+                        "secondary-fixed-dim": "#4ae183",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#ffddb9",
+                        "surface-container-high": "#e8e8ea",
+                        "primary-fixed-dim": "#b9c3ff",
+                        "inverse-on-surface": "#f0f0f3",
+                        "on-surface-variant": "#444654",
+                        "error-container": "#ffdad6",
+                        "secondary": "#006d37",
+                        "on-secondary-fixed": "#00210c",
+                        "surface-tint": "#2f50d6",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#dde1ff",
+                        "background": "#f9f9fc",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "lg": "48px",
+                        "xs": "4px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "title-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "title-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col">
+
+    <!-- Top Navigation Bar -->
+    <nav class="bg-surface dark:bg-on-background shadow-sm dark:bg-surface-container-highest docked full-width top-0 z-50">
+        <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-base w-full max-w-7xl mx-auto">
+            <!-- Brand Logo -->
+            <div class="font-display-lg text-display-lg font-extrabold text-primary dark:text-primary-fixed-dim tracking-tight hidden md:block">
+                LingoGuru
+            </div>
+            <div class="font-headline-lg-mobile text-headline-lg-mobile font-extrabold text-primary dark:text-primary-fixed-dim md:hidden">
+                LingoGuru
+            </div>
+
+            <!-- Trailing Actions -->
+            <div class="flex items-center gap-4">
+                <button class="text-on-surface-variant hover:text-primary-container transition-colors active:scale-95 transition-transform" aria-label="Help">
+                    <span class="material-symbols-outlined" data-icon="help">help</span>
+                </button>
+                <button class="text-on-surface-variant hover:text-primary-container transition-colors active:scale-95 transition-transform" aria-label="Home">
+                    <span class="material-symbols-outlined" data-icon="home">home</span>
+                </button>
+                <button class="text-on-surface-variant hover:text-primary-container transition-colors active:scale-95 transition-transform" aria-label="Settings">
+                    <span class="material-symbols-outlined" data-icon="settings">settings</span>
+                </button>
+                <button class="text-on-surface-variant hover:text-primary-container transition-colors active:scale-95 transition-transform" aria-label="Account">
+                    <span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow flex flex-col items-center justify-start w-full px-margin-mobile md:px-margin-desktop py-md md:py-lg max-w-5xl mx-auto">
+
+        <!-- Progress Header -->
+        <div class="w-full flex items-center justify-between gap-md mb-lg">
+            
+            <!-- Pause Button & Info -->
+            <div class="flex items-center gap-sm">
+                <button class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant bg-surface-container-lowest text-primary hover:bg-surface-container-low transition-colors active:scale-95" aria-label="Pause Exercise">
+                    <span class="material-symbols-outlined" data-icon="pause">pause</span>
+                </button>
+                <div class="hidden md:flex flex-col">
+                    <span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Speaking</span>
+                    <span class="font-body-md text-body-md text-outline">Exercise 3 of 10</span>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="flex-grow h-2 bg-surface-container-high rounded-full overflow-hidden mx-md">
+                <div class="h-full bg-primary rounded-full transition-all duration-500 ease-out" style="width: 30%;"></div>
+            </div>
+
+            <!-- Timer Pill -->
+            <div class="flex items-center justify-center bg-primary text-on-primary font-title-md text-title-md rounded-full px-6 py-2 gap-2 shadow-button min-w-[100px]">
+                <span class="material-symbols-outlined text-[20px]" data-icon="timer">timer</span>
+                <span class="">28</span>
+            </div>
+        </div>
+
+        <!-- Exercise Card (Bento/Glassmorphism inspired clean layout) -->
+        <div class="w-full bg-surface-container-lowest rounded-[24px] shadow-soft p-md md:p-lg flex flex-col items-center relative overflow-hidden">
+            
+            <!---->
+            <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none rounded-t-[24px]"></div>
+
+            <!-- Instruction Chip -->
+            <div class="bg-primary-fixed text-primary font-label-md text-label-md uppercase tracking-wider px-4 py-1.5 rounded-full mb-8 inline-flex items-center z-10">
+                Speak this sentence
+            </div>
+
+            <!-- Target Sentence -->
+            <h1 class="font-display-lg text-display-lg md:text-[56px] text-center text-on-surface mb-12 z-10 leading-tight">
+                I am a student.
+            </h1>
+
+            <!-- Recording Interaction Area -->
+            <div class="flex flex-col items-center justify-center mb-12 w-full max-w-md z-10">
+                
+                <!-- Microphone / Voice Visualizer Placeholder -->
+                <button class="relative w-24 h-24 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-button hover:bg-primary-container transition-all active:scale-95 group mb-6 focus:outline-none focus:ring-4 focus:ring-primary-fixed focus:ring-offset-2">
+                    <!-- Outer pulsating rings (visual effect) -->
+                    <div class="absolute inset-0 rounded-full border-2 border-primary opacity-0 group-hover:animate-ping"></div>
+                    <span class="material-symbols-outlined text-[40px]" data-icon="mic">mic</span>
+                </button>
+                
+                <p class="font-body-lg text-body-lg text-on-surface-variant text-center">
+                    Click to record
+                </p>
+            </div>
+
+            <!-- Options (For consistency with previous screens, maybe alternative pronunciations or parts of speech, but usually speaking doesn't have options. Let's adapt them as hints or related phrases to keep the layout similar to the prompt request) -->
+             
+
+            <!-- Bottom Action Area -->
+            <div class="w-full flex items-center border-t border-surface-container-high pt-8 mt-auto z-10 justify-end">
+                
+                </div></div></main></body></html>

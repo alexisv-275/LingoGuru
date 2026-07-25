@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LingoGuru - Listening Exercise</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffddb9",
+                        "secondary": "#006d37",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#2f50d6",
+                        "on-tertiary-fixed-variant": "#663e00",
+                        "surface-container-high": "#e8e8ea",
+                        "secondary-fixed-dim": "#4ae183",
+                        "surface-dim": "#dadadc",
+                        "tertiary": "#835100",
+                        "primary": "#2c4ed3",
+                        "primary-fixed-dim": "#b9c3ff",
+                        "on-error": "#ffffff",
+                        "on-background": "#1a1c1e",
+                        "surface": "#f9f9fc",
+                        "inverse-surface": "#2f3133",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#005228",
+                        "primary-fixed": "#dde1ff",
+                        "on-tertiary-container": "#fffbff",
+                        "on-secondary-fixed": "#00210c",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#00743a",
+                        "surface-container": "#eeeef0",
+                        "outline-variant": "#c4c5d7",
+                        "on-primary-fixed-variant": "#0435be",
+                        "secondary-fixed": "#6bfe9c",
+                        "on-primary-fixed": "#001257",
+                        "surface-container-low": "#f3f3f6",
+                        "tertiary-container": "#a46700",
+                        "secondary-container": "#6bfe9c",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e2e2e5",
+                        "outline": "#747686",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f0f0f3",
+                        "surface-variant": "#e2e2e5",
+                        "on-surface": "#1a1c1e",
+                        "background": "#f9f9fc",
+                        "on-primary-container": "#fffbff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#2b1700",
+                        "on-surface-variant": "#444654",
+                        "surface-bright": "#f9f9fc",
+                        "tertiary-fixed-dim": "#ffb961",
+                        "error": "#ba1a1a",
+                        "primary-container": "#4a69ed",
+                        "inverse-primary": "#b9c3ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "xs": "4px",
+                        "xl": "80px",
+                        "lg": "48px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "title-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "title-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .timer-glow {
+            box-shadow: 0 0 15px rgba(255, 185, 97, 0.3);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #c4c5d7;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- TopNavBar: Authority Source JSON -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface dark:bg-surface-container shadow-sm">
+<div class="flex items-center gap-md">
+<span class="font-display-lg text-title-md font-extrabold text-primary dark:text-primary-fixed-dim">LingoGuru</span>
+</div>
+<div class="flex items-center gap-md">
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low transition-colors p-2 rounded-full">help</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low transition-colors p-2 rounded-full">home</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low transition-colors p-2 rounded-full">settings</button>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A clean, professional studio headshot of a friendly young adult language learner smiling warmly at the camera. They have a neat hairstyle and are wearing casual but smart attire. The background is a soft, out-of-focus modern library setting with cool blue and white tones, matching a clean light-mode user interface aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS-Fovneb7asw0xLpol9vOdR5l4jw6HC8KDN5Du6em8Z5I2auWJBhkmo3VAKQsrzWIe0oLT0rRRYd8N0TMhofac0AV_oHKJl_cX6NCOPqMc3kwVUdSSReD7jK4ci1U5jJEHdBV11kZ2VP3fx0tIaQXnB_EOMFiZj4v9_BCBk51Ad5GwUbOEDEPnMCq3tFC2o32vBUAds8acBN14uQmS1oM_sqPZRBvv8eSyqr1wskrkhlCuQyyOL7sDh1CSrNWU9lnxMsYeR4YAGKy"/>
+</div>
+</div>
+</header>
+<!-- Content Canvas -->
+<main class="pt-16 min-h-screen flex flex-col items-center">
+<!-- Exercise Status Bar -->
+<div class="w-full max-w-5xl px-margin-mobile md:px-md py-md flex items-center gap-md"><button class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-outline-variant text-on-surface-variant hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined">pause</span>
+</button><div class="flex flex-col ml-sm">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Grammar</span>
+<span class="text-sm text-outline">Exercise 3 of 10</span>
+</div>
+<div class="flex-grow flex flex-col gap-xs">
+<div class="w-full h-3 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-500 ease-out" style="width: 30%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-xs px-md py-sm bg-primary-container/10 text-primary rounded-full border border-primary-container/20">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+<span class="font-bold text-lg">28</span>
+</div></div>
+<!-- Central Exercise Container -->
+<div class="w-full max-w-4xl px-margin-mobile md:px-md mb-xl">
+<div class="bg-surface-container-lowest rounded-2xl md:rounded-3xl p-lg md:p-xl soft-shadow flex flex-col items-center">
+<!-- Listening Icon -->
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-primary text-4xl">headphones</span>
+</div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-xs">Listen and choose</h1>
+<p class="font-body-md text-on-surface-variant mb-lg text-center">Listen to the audio and select the sentence you heard</p>
+<!-- Audio Player Component -->
+<div class="w-full max-w-2xl bg-surface-container-low rounded-2xl p-md flex items-center gap-md mb-lg">
+<button class="w-12 h-12 bg-primary hover:bg-primary-container text-on-primary rounded-full flex items-center justify-center shadow-md active:scale-95 transition-all" id="playBtn">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</button>
+<div class="flex-grow flex flex-col gap-xs pt-1">
+<div class="w-full h-1.5 bg-outline-variant rounded-full cursor-pointer relative group">
+<div class="absolute top-0 left-0 h-full bg-primary rounded-full" style="width: 0%;"></div>
+<div class="absolute top-1/2 -translate-y-1/2 h-3 w-3 bg-primary border-2 border-white rounded-full shadow-sm hidden group-hover:block" style="left: 0%;"></div>
+</div>
+<div class="flex justify-between items-center font-label-md text-outline">
+<span>0s</span>
+<span>3.0s</span>
+</div>
+</div>
+<div class="flex items-center gap-xs px-sm py-xs bg-surface-container-highest rounded-lg text-on-surface-variant font-label-md cursor-pointer hover:bg-outline-variant transition-colors">
+<span class="material-symbols-outlined text-sm">close</span>
+<span>0.75</span>
+</div>
+</div>
+<!-- Multiple Choice Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md w-full mb-lg">
+<!-- Option A -->
+<button class="option-btn text-left p-md border-2 border-surface-container-high rounded-xl hover:border-primary-fixed-dim hover:bg-surface-container transition-all flex items-center gap-md group">
+<span class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container-high font-bold text-on-surface-variant group-hover:bg-primary-fixed group-hover:text-primary">A</span>
+<span class="font-title-md text-on-surface">She is going to the market.</span>
+</button>
+<!-- Option B -->
+<button class="option-btn text-left p-md border-2 border-surface-container-high rounded-xl hover:border-primary-fixed-dim hover:bg-surface-container transition-all flex items-center gap-md group">
+<span class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container-high font-bold text-on-surface-variant group-hover:bg-primary-fixed group-hover:text-primary">B</span>
+<span class="font-title-md text-on-surface">She goes to the market.</span>
+</button>
+<!-- Option C -->
+<button class="option-btn text-left p-md border-2 border-surface-container-high rounded-xl hover:border-primary-fixed-dim hover:bg-surface-container transition-all flex items-center gap-md group">
+<span class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container-high font-bold text-on-surface-variant group-hover:bg-primary-fixed group-hover:text-primary">C</span>
+<span class="font-title-md text-on-surface">She was at the market.</span>
+</button>
+<!-- Option D -->
+<button class="option-btn text-left p-md border-2 border-surface-container-high rounded-xl hover:border-primary-fixed-dim hover:bg-surface-container transition-all flex items-center gap-md group">
+<span class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container-high font-bold text-on-surface-variant group-hover:bg-primary-fixed group-hover:text-primary">D</span>
+<span class="font-title-md text-on-surface">She will go to the market.</span>
+</button>
+</div>
+<!-- Action Footer -->
+<div class="w-full flex justify-end"><button class="flex items-center gap-sm px-xl py-md bg-primary text-on-primary font-bold text-title-md rounded-xl shadow-md hover:bg-primary-container transition-all active:scale-95" id="checkBtn">
+<span>Check</span>
+<span class="material-symbols-outlined">check_circle</span>
+</button></div>
+</div>
+</div>
+</main>
+<script>
+        // Simple Interaction Logic
+        const options = document.querySelectorAll('.option-btn');
+        const checkBtn = document.getElementById('checkBtn');
+        let selectedOption = null;
+
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                // Reset others
+                options.forEach(o => {
+                    o.classList.remove('border-primary', 'bg-primary-fixed/20');
+                    o.classList.add('border-surface-container-high');
+                });
+                
+                // Select this one
+                option.classList.remove('border-surface-container-high');
+                option.classList.add('border-primary', 'bg-primary-fixed/20');
+                selectedOption = option;
+
+                // Enable Check Button
+                checkBtn.classList.remove('bg-surface-container-high', 'text-on-surface-variant', 'cursor-not-allowed', 'opacity-70');
+                checkBtn.classList.add('bg-primary', 'text-on-primary', 'cursor-pointer', 'shadow-md');
+                checkBtn.removeAttribute('disabled');
+            });
+        });
+
+        // Play Button Animation Logic
+        const playBtn = document.getElementById('playBtn');
+        let isPlaying = false;
+        playBtn.addEventListener('click', () => {
+            isPlaying = !isPlaying;
+            const icon = playBtn.querySelector('.material-symbols-outlined');
+            if (isPlaying) {
+                icon.innerText = 'pause';
+                // Simulate progress bar move
+                const bar = document.querySelector('.bg-primary.h-full'); // Progress on top bar? No, audio bar
+                const audioBar = document.querySelector('.bg-outline-variant > .bg-primary');
+                const audioHandle = document.querySelector('.group-hover\\:block');
+                
+                let progress = 0;
+                const interval = setInterval(() => {
+                    if (progress >= 100 || !isPlaying) {
+                        clearInterval(interval);
+                        if(progress >= 100) {
+                            isPlaying = false;
+                            icon.innerText = 'play_arrow';
+                        }
+                    } else {
+                        progress += 1;
+                        audioBar.style.width = progress + '%';
+                    }
+                }, 30);
+            } else {
+                icon.innerText = 'play_arrow';
+            }
+        });
+    </script>
+</body></html>

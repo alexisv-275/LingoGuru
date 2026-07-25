@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LingoGuru - Verb To Be Lesson</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-container": "#fffbff",
+                        "surface-container-high": "#e8e8ea",
+                        "tertiary-fixed-dim": "#ffb961",
+                        "secondary-container": "#6bfe9c",
+                        "on-secondary-container": "#00743a",
+                        "on-secondary-fixed-variant": "#005228",
+                        "inverse-primary": "#b9c3ff",
+                        "secondary-fixed-dim": "#4ae183",
+                        "primary-fixed": "#dde1ff",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e2e2e5",
+                        "outline-variant": "#c4c5d7",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#2b1700",
+                        "tertiary-container": "#a46700",
+                        "primary-fixed-dim": "#b9c3ff",
+                        "primary-container": "#4a69ed",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "background": "#f9f9fc",
+                        "surface-container-highest": "#e2e2e5",
+                        "secondary-fixed": "#6bfe9c",
+                        "on-error": "#ffffff",
+                        "surface-container": "#eeeef0",
+                        "surface": "#f9f9fc",
+                        "on-primary-fixed-variant": "#0435be",
+                        "on-background": "#1a1c1e",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#444654",
+                        "on-surface": "#1a1c1e",
+                        "on-tertiary-fixed-variant": "#663e00",
+                        "on-primary-fixed": "#001257",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dadadc",
+                        "inverse-on-surface": "#f0f0f3",
+                        "outline": "#747686",
+                        "surface-container-low": "#f3f3f6",
+                        "on-primary-container": "#fffbff",
+                        "inverse-surface": "#2f3133",
+                        "surface-tint": "#2f50d6",
+                        "secondary": "#006d37",
+                        "tertiary": "#835100",
+                        "surface-bright": "#f9f9fc",
+                        "on-secondary-fixed": "#00210c",
+                        "tertiary-fixed": "#ffddb9",
+                        "primary": "#2c4ed3",
+                        "lesson-bg": "#F8FAFF",
+                        "main-rule-bg": "#F1F4FA",
+                        "main-rule-border": "#5472F7",
+                        "example-bg": "#FFF4E5",
+                        "example-item-bg": "#FFE1C2",
+                        "objective-icon": "#FF9F43",
+                        "xp-text": "#4CD964"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "margin-mobile": "16px",
+                        "sm": "12px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "xl": "80px",
+                        "md": "24px",
+                        "gutter": "24px",
+                        "lg": "48px"
+                    },
+                    fontFamily: {
+                        "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+                        "display-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "title-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "mono": ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"]
+                    },
+                    fontSize: {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "title-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    },
+                    boxShadow: {
+                        'soft': '0px 4px 20px rgba(0, 0, 0, 0.05)',
+                        'btn': '0px 4px 12px rgba(84, 114, 247, 0.3)'
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F8FAFF;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-lesson-bg text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface-dim font-title-md text-title-md sticky top-0 z-50 flex justify-between items-center w-full px-md h-16 shadow-sm">
+<div class="flex items-center gap-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A cute blue owl mascot wearing glasses and a graduation cap, 3d rendered style, bright and friendly, white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMvSYB1-ku1HhB47rRk6uYXPB5TQ5Vxn3lGC_bUNQfq_JLjLjPQktMryHORwx1ziJ3_E1vg-02UNj9MNrJ-vjlOJhqCmacuwBmjRDlSNKsjzCnkf0WQ3nyj1L6A3HQvMkowGNfqYXtTIdz3twJgiDYSQNsHX90MoyBtdlIHpPWYl1keqhJL3nmzuDeLUNpqSJM7vwlkOJzCYAOuDAU3flqboEDj9-0dfcnyfSyx9hax-bwxtQkd5f0SHZ5b04SlB7iIAtBZ_BlJa2l"/>
+</div>
+<span class="font-headline-lg text-headline-lg font-black text-primary dark:text-primary-fixed-dim">LingoGuru</span>
+</div>
+<div class="hidden md:flex items-center gap-sm h-full">
+<nav class="flex h-full">
+<!-- Suppressed horizontal nav as per rules, using trailing actions instead -->
+</nav>
+</div>
+<div class="flex items-center gap-sm">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors text-on-surface-variant dark:text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined">help_outline</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors text-on-surface-variant dark:text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined">home</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors text-on-surface-variant dark:text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors text-on-surface-variant dark:text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<div class="flex flex-1 overflow-hidden gap-lg">
+<!-- SideNavBar (Customized for Lesson Navigation as per prompt) -->
+<aside class="hidden lg:flex flex-col w-64 bg-surface dark:bg-surface-dim border-r border-outline-variant h-[calc(100vh-64px)] sticky top-16 py-lg overflow-y-auto shrink-0">
+<div class="px-md mb-md">
+<h3 class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">LESSON 4</h3>
+</div>
+<nav class="flex flex-col w-full font-label-md text-label-md gap-xs">
+<!-- Completed -->
+<a class="flex items-center gap-sm px-md py-sm hover:bg-surface-variant transition-all text-on-surface-variant" href="#">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<span class="">Introduction</span>
+</a>
+<!-- Completed -->
+<a class="flex items-center gap-sm px-md py-sm hover:bg-surface-variant transition-all text-on-surface-variant" href="#">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<span class="">Verb Forms</span>
+</a>
+<!-- Active -->
+<a class="flex items-center gap-sm bg-primary-container dark:bg-primary-container text-on-primary-container px-md py-sm font-bold border-l-4 border-primary" href="#">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary text-xs">
+                        3
+                    </div>
+<span class="">Verb To Be</span>
+</a>
+<!-- Locked/Upcoming -->
+<a class="flex items-center gap-sm px-md py-sm hover:bg-surface-variant transition-all text-on-surface-variant opacity-60" href="#">
+<div class="w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center text-outline text-xs">
+                        4
+                    </div>
+<span class="">Negative sentences</span>
+</a>
+<!-- Locked/Upcoming -->
+<a class="flex items-center gap-sm px-md py-sm hover:bg-surface-variant transition-all text-on-surface-variant opacity-60" href="#">
+<div class="w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center text-outline text-xs">
+                        5
+                    </div>
+<span class="">Questions</span>
+</a>
+<!-- Locked/Upcoming -->
+<a class="flex items-center gap-sm px-md py-sm hover:bg-surface-variant transition-all text-on-surface-variant opacity-60" href="#">
+<div class="w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center text-outline text-xs">
+                        6
+                    </div>
+<span class="">Contractions</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto px-margin-mobile md:px-margin-desktop py-lg flex justify-center"><div class="w-full max-w-4xl bg-surface-container-lowest rounded-2xl shadow-soft p-md md:p-[40px] flex flex-col gap-lg">
+<!-- Header Section -->
+<div class="flex flex-col gap-md">
+<div>
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider mb-xs block">LEVEL 4</span>
+<h1 class="font-display-lg text-display-lg text-on-surface">Verb To Be</h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            The verb "to be" is one of the most important verbs in English. You'll use it all the time to describe states, identities, and conditions.
+        </p>
+<ul class="flex flex-col gap-sm mt-sm">
+<li class="flex items-start gap-sm font-body-md text-body-md text-on-surface">
+<span class="material-symbols-outlined filled text-objective-icon shrink-0">check_circle</span>
+<span class="">Use of the verb "to be" in the present tense</span>
+</li>
+<li class="flex items-start gap-sm font-body-md text-body-md text-on-surface">
+<span class="material-symbols-outlined filled text-objective-icon shrink-0">check_circle</span>
+<span class="">Affirmative, negative, and interrogative sentences</span>
+</li>
+<li class="flex items-start gap-sm font-body-md text-body-md text-on-surface">
+<span class="material-symbols-outlined filled text-objective-icon shrink-0">check_circle</span>
+<span class="">Contractions and colloquial forms</span>
+</li>
+</ul>
+</div>
+<!-- Main Rule Section -->
+<div class="bg-main-rule-bg rounded-xl p-md border-l-4 border-main-rule-border relative overflow-hidden">
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wider mb-sm">MAIN RULE</h3>
+<div class="font-body-md text-body-md text-on-surface mb-md">
+<span class="font-bold">am</span> <span class="text-outline mx-xs">→</span> I <span class="text-outline mx-xs">·</span>
+<span class="font-bold">is</span> <span class="text-outline mx-xs">→</span> he, she, it <span class="text-outline mx-xs">·</span>
+<span class="font-bold">are</span> <span class="text-outline mx-xs">→</span> you, we, they
+        </div>
+<div class="bg-surface-container-lowest rounded-lg py-sm px-md font-mono text-sm text-on-surface shadow-sm overflow-x-auto">
+            Subject + am/is/are + complement
+        </div>
+</div>
+<!-- Examples Section -->
+<div class="bg-example-bg rounded-xl p-md">
+<h3 class="font-label-md text-label-md text-tertiary-container uppercase tracking-wider mb-md">EXAMPLES</h3>
+<div class="flex flex-col gap-sm">
+<div class="flex flex-col md:flex-row md:items-center gap-xs md:gap-md">
+<div class="bg-example-item-bg rounded-lg py-sm px-md font-body-md text-body-md text-on-tertiary-fixed font-medium md:w-1/2">
+                    I am a student.
+                </div>
+<span class="material-symbols-outlined text-outline hidden md:block text-sm">arrow_forward</span>
+<div class="py-sm px-md font-body-md text-body-md text-outline md:w-1/2">
+                    Yo soy estudiante.
+                </div>
+</div>
+<div class="flex flex-col md:flex-row md:items-center gap-xs md:gap-md">
+<div class="bg-example-item-bg rounded-lg py-sm px-md font-body-md text-body-md text-on-tertiary-fixed font-medium md:w-1/2">
+                    She is not tired.
+                </div>
+<span class="material-symbols-outlined text-outline hidden md:block text-sm">arrow_forward</span>
+<div class="py-sm px-md font-body-md text-body-md text-outline md:w-1/2">
+                    Ella no está cansada.
+                </div>
+</div>
+<div class="flex flex-col md:flex-row md:items-center gap-xs md:gap-md">
+<div class="bg-example-item-bg rounded-lg py-sm px-md font-body-md text-body-md text-on-tertiary-fixed font-medium md:w-1/2">
+                    Are you ready?
+                </div>
+<span class="material-symbols-outlined text-outline hidden md:block text-sm">arrow_forward</span>
+<div class="py-sm px-md font-body-md text-body-md text-outline md:w-1/2">
+                    ¿Estás listo?
+                </div>
+</div>
+</div>
+</div>
+<!-- Action Area -->
+<div class="flex flex-col items-center mt-sm">
+<a id="start-level-link" href="#" class="bg-[#5472F7] hover:bg-primary text-on-primary font-title-md text-title-md py-4 px-xl rounded-full shadow-btn transition-transform active:scale-95 flex items-center justify-center gap-xs w-full md:w-auto">
+<span class="">Start the level!</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<div class="flex items-center gap-md mt-md font-body-sm text-sm text-outline">
+<span class="">10 exercises</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="">~8 minutes</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-xp-text font-semibold">350 XP</span>
+</div>
+</div>
+</div></main></div>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const module = params.get('module') || 'grammar';
+  const exerciseMap = {
+    grammar: 'Ejercicio-Grammar.html',
+    listening: 'Ejercicio-Listening.html',
+    speaking: 'Ejercicio-Speaking.html',
+    writting: 'Ejercicio-Writting.html',
+    writing: 'Ejercicio-Writting.html'
+  };
+
+  const startLink = document.getElementById('start-level-link');
+  if (startLink) {
+    startLink.href = exerciseMap[module] || exerciseMap.grammar;
+  }
+</script>
+</body></html>

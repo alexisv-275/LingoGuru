@@ -1,0 +1,335 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "secondary": "#006d37",
+                "on-secondary-container": "#00743a",
+                "on-secondary-fixed-variant": "#005228",
+                "error": "#ba1a1a",
+                "tertiary-fixed-dim": "#ffb961",
+                "on-secondary-fixed": "#00210c",
+                "surface-container": "#eeeef0",
+                "surface-bright": "#f9f9fc",
+                "on-primary-container": "#fffbff",
+                "surface-variant": "#e2e2e5",
+                "surface-container-high": "#e8e8ea",
+                "tertiary": "#835100",
+                "on-tertiary-container": "#fffbff",
+                "on-error-container": "#93000a",
+                "inverse-on-surface": "#f0f0f3",
+                "primary": "#2c4ed3",
+                "surface-dim": "#dadadc",
+                "on-tertiary-fixed-variant": "#663e00",
+                "tertiary-fixed": "#ffddb9",
+                "outline": "#747686",
+                "primary-fixed-dim": "#b9c3ff",
+                "inverse-primary": "#b9c3ff",
+                "on-primary-fixed": "#001257",
+                "error-container": "#ffdad6",
+                "surface": "#f9f9fc",
+                "secondary-fixed-dim": "#4ae183",
+                "on-tertiary-fixed": "#2b1700",
+                "background": "#f9f9fc",
+                "surface-container-highest": "#e2e2e5",
+                "on-tertiary": "#ffffff",
+                "on-background": "#1a1c1e",
+                "secondary-fixed": "#6bfe9c",
+                "primary-fixed": "#dde1ff",
+                "tertiary-container": "#a46700",
+                "surface-container-low": "#f3f3f6",
+                "surface-container-lowest": "#ffffff",
+                "secondary-container": "#6bfe9c",
+                "on-primary-fixed-variant": "#0435be",
+                "on-error": "#ffffff",
+                "inverse-surface": "#2f3133",
+                "on-surface-variant": "#444654",
+                "primary-container": "#4a69ed",
+                "surface-tint": "#2f50d6",
+                "outline-variant": "#c4c5d7",
+                "on-secondary": "#ffffff",
+                "on-primary": "#ffffff",
+                "on-surface": "#1a1c1e"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "xl": "80px",
+                "sm": "12px",
+                "margin-mobile": "16px",
+                "base": "8px",
+                "gutter": "24px",
+                "xs": "4px",
+                "margin-desktop": "64px",
+                "lg": "48px",
+                "md": "24px"
+        },
+        "fontFamily": {
+                "headline-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "display-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "label-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg-mobile": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "title-md": [
+                        "Plus Jakarta Sans"
+                ]
+        },
+        "fontSize": {
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.02em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "title-md": [
+                        "20px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+}catch(_e){}</script><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"></head><body class="bg-background text-on-background min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-white px-6 py-4 flex items-center justify-between shadow-sm sticky top-0 z-10" data-purpose="top-nav-bar">
+<!-- Logo Section -->
+<div class="flex items-center gap-3">
+<div aria-hidden="true" class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl">
+<i class="fa-solid fa-owl"></i>
+</div>
+<h1 class="text-xl font-bold tracking-tight">LingoGuru</h1>
+</div>
+<!-- Navigation Icons -->
+<nav aria-label="Main Navigation">
+<ul class="flex items-center gap-6 text-gray-600 text-xl">
+<li>
+<a aria-label="Help" class="hover:text-blue-600 transition-colors focus-ring rounded-full p-1 block" href="#">
+<i class="fa-regular fa-circle-question"></i>
+</a>
+</li>
+<li>
+<a aria-label="Home" class="hover:text-blue-600 transition-colors focus-ring rounded-full p-1 block" href="#">
+<i class="fa-solid fa-house"></i>
+</a>
+</li>
+<li>
+<a aria-label="Settings" class="hover:text-blue-600 transition-colors focus-ring rounded-full p-1 block" href="#">
+<i class="fa-solid fa-gear"></i>
+</a>
+</li>
+<li>
+<a aria-label="User Profile" class="hover:text-blue-600 transition-colors focus-ring rounded-full p-1 block" href="#">
+<i class="fa-regular fa-circle-user"></i>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<div class="flex max-w-[1440px] mx-auto">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col fixed left-0 top-16 h-[calc(100vh-64px)] border-r border-outline-variant w-64 bg-surface-container-low dark:bg-surface-container-low z-40">
+<nav class="flex flex-col gap-2 p-md mt-4">
+<a class="flex items-center gap-sm text-on-surface-variant dark:text-on-surface-variant px-md py-sm hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all rounded-xl font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-xl">dashboard</span>
+                    Dashboard
+                </a>
+<a class="flex items-center gap-sm bg-primary-container dark:bg-primary-container text-on-primary-container rounded-xl px-md py-sm font-bold font-label-md text-label-md active:translate-x-1 transition-transform shadow-sm" href="#">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+                    Grammar
+                </a>
+<a class="flex items-center gap-sm text-on-surface-variant dark:text-on-surface-variant px-md py-sm hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all rounded-xl font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-xl">record_voice_over</span>
+                    Speaking
+                </a>
+<a class="flex items-center gap-sm text-on-surface-variant dark:text-on-surface-variant px-md py-sm hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all rounded-xl font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-xl">hearing</span>
+                    Listening
+                </a>
+<a class="flex items-center gap-sm text-on-surface-variant dark:text-on-surface-variant px-md py-sm hover:bg-surface-variant dark:hover:bg-surface-container-highest transition-all rounded-xl font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-xl">edit_note</span>
+                    Writing
+                </a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 lg:ml-64 p-lg w-full">
+<div class="max-w-4xl mx-auto">
+<!-- Module Header -->
+<div class="flex items-center gap-4 mb-lg">
+<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">mic</span>
+</div>
+<h2 class="font-display-lg text-display-lg text-on-surface">Grammar</h2>
+</div>
+<!-- Overall Progress Card -->
+<section class="bg-surface-container-low rounded-[24px] p-6 shadow-md mb-lg relative overflow-hidden border border-outline-variant/20">
+<h3 class="font-label-md text-label-md text-outline uppercase tracking-wider mb-4">Accumulated</h3>
+<div class="relative w-full h-4 bg-surface-container-high rounded-full mb-3 overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-primary rounded-full transition-all duration-1000 ease-out" style="width: 60%;"></div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-bold">60% Completed</p>
+</section>
+<h3 class="font-label-md text-label-md text-outline uppercase tracking-wider mb-6">Learning Path</h3>
+<!-- Learning Path Timeline -->
+<div class="relative pl-6 lg:pl-10 before:content-[''] before:absolute before:left-[1.375rem] lg:before:left-[2.375rem] before:top-4 before:w-0.5 before:bg-surface-container-high before:bottom-0">
+<!-- Thematic Unit 1 -->
+<div class="mb-12 relative">
+<!-- Unit Tag -->
+<div class="inline-block text-outline px-4 py-1.5 font-label-md text-label-md mb-8 relative -ml-10 lg:-ml-14 z-10 bg-surface-container-high/50 rounded-full font-bold">
+                            Thematic Unit: Start a conversation
+                        </div>
+<!-- Level 1: Done -->
+<div class="flex items-center gap-4 lg:gap-6 mb-6 relative z-10 group cursor-pointer level-row" data-module="grammar" role="button" tabindex="0">
+<div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container -ml-10 lg:-ml-12 border-[6px] border-background shrink-0 shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex-1 bg-green-50/50 rounded-[24px] p-5 lg:p-6 shadow-[0px_4px_20px_rgba(0,0,0,0.05)] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border border-secondary-fixed group-hover:shadow-[0px_8px_30px_rgba(0,0,0,0.08)] transition-all">
+<span class="font-title-md text-title-md text-on-surface">Level 1 — Introductions</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-md text-sm flex items-center gap-1.5 shadow-sm border border-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">check</span> Done
+                                </span>
+</div>
+</div>
+<!-- Level 2: Done -->
+<div class="flex items-center gap-4 lg:gap-6 mb-6 relative z-10 group cursor-pointer level-row" data-module="grammar" role="button" tabindex="0">
+<div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container -ml-10 lg:-ml-12 border-[6px] border-background shrink-0 shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex-1 bg-green-50/50 rounded-[24px] p-5 lg:p-6 shadow-[0px_4px_20px_rgba(0,0,0,0.05)] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border border-secondary-fixed group-hover:shadow-[0px_8px_30px_rgba(0,0,0,0.08)] transition-all">
+<span class="font-title-md text-title-md text-on-surface">Level 2 — Greetings</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-md text-sm flex items-center gap-1.5 shadow-sm border border-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">check</span> Done
+                                </span>
+</div>
+</div>
+<!-- Level 3: In Progress -->
+<div class="flex items-center gap-4 lg:gap-6 mb-6 relative z-10 group cursor-pointer level-row" data-module="grammar" role="button" tabindex="0">
+<div class="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center text-primary font-bold text-xl -ml-11 lg:-ml-13 shrink-0 shadow-[0px_8px_20px_rgba(44,78,211,0.25)] bg-white">
+                                3
+                            </div>
+<div class="flex-1 bg-surface-container-lowest rounded-[24px] p-5 lg:p-6 shadow-[0px_16px_48px_rgba(0,0,0,0.12)] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border border-primary relative overflow-hidden bg-white">
+<div class="absolute top-0 left-0 w-2 h-full bg-primary shadow-[2px_0px_10px_rgba(44,78,211,0.5)]"></div>
+<span class="font-title-md text-title-md text-on-surface pl-2">Level 3 — Small Talk</span>
+<span class="bg-primary text-on-primary px-4 py-1.5 rounded-full font-label-md text-sm shadow-md">
+                                    In Progress
+                                </span>
+</div>
+</div>
+</div>
+<!-- Thematic Unit 2 -->
+<div class="mb-12 relative">
+<!-- Unit Tag -->
+<div class="inline-block text-outline px-4 py-1.5 font-label-md text-label-md mb-8 relative -ml-10 lg:-ml-14 z-10 bg-surface-container-high/50 rounded-full font-bold">
+                            Thematic Unit: Describe people / places
+                        </div>
+<!-- Level 1: Next / Unlocked -->
+<div class="flex items-center gap-4 lg:gap-6 mb-6 relative z-10 level-row" data-module="grammar" role="button" tabindex="0">
+<div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-bold text-lg -ml-10 lg:-ml-12 border-[6px] border-background shrink-0 shadow-sm">
+                                1
+                            </div>
+<div class="flex-1 bg-surface-container-lowest rounded-[24px] p-5 lg:p-6 shadow-[0px_4px_20px_rgba(0,0,0,0.05)] flex justify-between items-center border border-transparent">
+<span class="font-title-md text-title-md text-on-surface-variant">Level 1 — Appearance</span>
+</div>
+</div>
+<!-- Level 2: Blocked -->
+<div class="flex items-center gap-4 lg:gap-6 mb-6 relative z-10 opacity-75 level-row" data-module="grammar" role="button" tabindex="0">
+<div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant -ml-10 lg:-ml-12 border-[6px] border-background shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<div class="flex-1 bg-surface-container rounded-[24px] p-5 lg:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+<span class="font-title-md text-title-md text-on-surface-variant">Level 2 — Personality</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full font-label-md text-sm border border-outline-variant">
+                                    Blocked
+                                </span>
+</div>
+</div>
+<!-- Level 3: Blocked -->
+<div class="flex items-center gap-4 lg:gap-6 mb-6 relative z-10 opacity-75 level-row" data-module="grammar" role="button" tabindex="0">
+<div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant -ml-10 lg:-ml-12 border-[6px] border-background shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<div class="flex-1 bg-surface-container rounded-[24px] p-5 lg:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+<span class="font-title-md text-title-md text-on-surface-variant">Level 3 — Places</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full font-label-md text-sm border border-outline-variant">
+                                    Blocked
+                                </span>
+</div>
+</div></div></div></div></main></div>
+<script>
+  document.querySelectorAll('.level-row').forEach((row) => {
+    const goToLesson = () => {
+      const module = row.dataset.module || 'grammar';
+      window.location.href = `LeccionesNivel.html?module=${module}`;
+    };
+
+    row.addEventListener('click', goToLesson);
+    row.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        goToLesson();
+      }
+    });
+  });
+</script>
+
+</body></html>

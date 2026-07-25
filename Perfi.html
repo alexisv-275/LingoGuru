@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LingoGuru - Profile Settings</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#005228",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#eeeef0",
+                    "secondary": "#006d37",
+                    "inverse-surface": "#2f3133",
+                    "primary-fixed-dim": "#b9c3ff",
+                    "on-secondary-fixed": "#00210c",
+                    "on-surface-variant": "#444654",
+                    "outline": "#747686",
+                    "inverse-on-surface": "#f0f0f3",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e2e2e5",
+                    "surface-bright": "#f9f9fc",
+                    "secondary-fixed": "#6bfe9c",
+                    "on-primary-fixed-variant": "#0435be",
+                    "on-primary-container": "#fffbff",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#a46700",
+                    "background": "#f9f9fc",
+                    "on-surface": "#1a1c1e",
+                    "primary-container": "#4a69ed",
+                    "surface-container-high": "#e8e8ea",
+                    "on-primary-fixed": "#001257",
+                    "surface-container-low": "#f3f3f6",
+                    "secondary-fixed-dim": "#4ae183",
+                    "primary": "#2c4ed3",
+                    "surface-dim": "#dadadc",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#6bfe9c",
+                    "on-tertiary-fixed-variant": "#663e00",
+                    "surface-variant": "#e2e2e5",
+                    "on-tertiary-fixed": "#2b1700",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#fffbff",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#b9c3ff",
+                    "surface-tint": "#2f50d6",
+                    "tertiary-fixed": "#ffddb9",
+                    "tertiary": "#835100",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f9f9fc",
+                    "primary-fixed": "#dde1ff",
+                    "on-background": "#1a1c1e",
+                    "tertiary-fixed-dim": "#ffb961",
+                    "outline-variant": "#c4c5d7",
+                    "on-secondary-container": "#00743a",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "12px",
+                    "xs": "4px",
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "lg": "48px",
+                    "md": "24px",
+                    "xl": "80px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "title-md": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .active-ring {
+            box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #2c4ed3;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface dark:bg-surface-dim shadow-sm">
+<div class="flex items-center gap-base cursor-pointer active:opacity-70">
+<img class="w-10 h-10" data-alt="A stylized, friendly owl logo mascot for a language learning app called LingoGuru. The owl is bright blue with large expressive eyes and a small orange beak, set against a clean white background. The brand name LingoGuru is written next to it in a bold, modern Plus Jakarta Sans font in primary blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1JtCABwx0WNjb0u5-kY96BYA3An3MMSK-B5X_hURIng0Z1owffL3wBbfdiTyPca-YMT7gMKINP9R0kVx3SZwLYoZ-9xJLg_3fBPleedGrRZZXs6N8wnroce2cwq41QqfVdI3CJPCxDr8R65f_Z4UGyuR11wXrqC9U9pBoVdoSZWtE2BdD-IvWde41U_Sdn_F0_ODMZrw1hfVP1qy6UEUFspG0UdchpfBY5nUnJJogFgZ4OsfX5esu6d5QLOSkYLMfyFrW70yo_UNQ"/>
+<span class="text-title-md font-title-md font-extrabold text-primary">LingoGuru</span>
+</div>
+<nav class="hidden md:flex items-center gap-gutter h-full">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer active:opacity-70" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer active:opacity-70" href="#">Help</a>
+</nav>
+<div class="flex items-center gap-md">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer active:opacity-70">help</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer active:opacity-70">home</button>
+<button class="material-symbols-outlined text-primary border-b-2 border-primary pb-1 transition-colors cursor-pointer active:opacity-70">settings</button>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant cursor-pointer active:scale-95">
+<img class="w-full h-full object-cover" data-alt="A high-quality professional portrait avatar of a young woman with a friendly smile. She has dark hair and is wearing a simple neutral-colored top. The lighting is soft and natural, emphasizing a bright and approachable personality consistent with a corporate modern education app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyhizOQq1tzrYDxNxaPAbtKoRUGOEndKkXj2EqHjUALLWloYG1IxfL0l6Xx8mYq3yVC6dO5VTViKRxoUojgkq2JljdVY8nwO5Q9lx4eQv-GDJmnEALapoKb975rUDuoNIzAZvMki7vODpT8b1PA0CpQY2g8g4avlIyR-v6lNenLIRlcfCyqz84Vfjil1Y3NWAchDDKpr1_XSpXHFoVk2vOjPWXeUkeKCRxm8NTLBuXCdnpaCYwBV4ox_ZoCtoqSrqsUnQ3WIIpBoFA"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-20 md:pb-12 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto flex flex-col md:flex-row gap-gutter">
+<!-- Left Column: Profile Card & Sidebar -->
+<aside class="w-full md:w-80 flex flex-col gap-gutter">
+<!-- User Profile Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-md flex flex-col items-center soft-shadow">
+<div class="w-24 h-24 rounded-full bg-primary flex items-center justify-center text-on-primary text-display-lg mb-base">
+                    MA
+                </div>
+<h2 class="font-title-md text-title-md text-on-surface">María Aguilar</h2>
+<p class="text-on-surface-variant font-body-md mb-md">maria@example.com</p>
+<div class="flex gap-sm">
+<div class="flex items-center gap-xs px-3 py-1 bg-tertiary-fixed rounded-full text-on-tertiary-fixed font-label-md text-label-md">
+<span>🔥</span> 7 days
+                    </div>
+<div class="flex items-center gap-xs px-3 py-1 bg-primary-fixed rounded-full text-on-primary-fixed font-label-md text-label-md">
+<span>⚡</span> 2,450 XP
+                    </div>
+</div>
+</div>
+<!-- SideNavBar -->
+<nav class="bg-surface-container-low rounded-xl overflow-hidden soft-shadow">
+<div class="p-md border-b border-outline-variant/30">
+<h3 class="font-title-md text-on-surface">Personal Settings</h3>
+<p class="text-label-md text-on-surface-variant">Manage your account preferences</p>
+</div>
+<div class="flex flex-col py-base">
+<!-- Profile (Active) -->
+<div class="flex items-center gap-sm px-md py-3 text-primary font-bold border-r-4 border-primary bg-surface-container-high transition-all cursor-pointer active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-body-md">Profile</span>
+</div>
+<!-- Notifications -->
+<div class="flex items-center gap-sm px-md py-3 text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer active:scale-95">
+<span class="material-symbols-outlined">notifications</span>
+<span class="font-body-md">Notifications</span>
+</div>
+<!-- Sound -->
+<div class="flex items-center gap-sm px-md py-3 text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer active:scale-95">
+<span class="material-symbols-outlined">volume_up</span>
+<span class="font-body-md">Sound</span>
+</div>
+<!-- Privacy -->
+<div class="flex items-center gap-sm px-md py-3 text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer active:scale-95">
+<span class="material-symbols-outlined">lock</span>
+<span class="font-body-md">Privacy</span>
+</div>
+</div>
+</nav>
+</aside>
+<!-- Right Column: Main Content -->
+<section class="flex-1 bg-surface-container-lowest rounded-xl p-md md:p-xl soft-shadow">
+<div class="mb-xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-gutter">Personal Information</h1>
+<div class="grid grid-cols-1 gap-gutter">
+<!-- Full Name -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-md py-3 text-on-surface focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" type="text" value="María Aguilar"/>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-on-surface-variant">E-mail</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-md py-3 text-on-surface focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" type="email" value="maria@example.com"/>
+</div>
+<!-- Native Language -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-on-surface-variant">Native language</label>
+<select class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-md py-3 text-on-surface focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all appearance-none">
+<option disabled="" selected="" value="">Select your language</option>
+<option>Spanish</option>
+<option>English</option>
+<option>French</option>
+<option>German</option>
+</select>
+</div>
+</div>
+</div>
+<hr class="border-outline-variant/30 mb-xl"/>
+<div class="mb-xl">
+<h2 class="font-title-md text-title-md text-on-surface mb-gutter">Preferences</h2>
+<div class="flex flex-col gap-md">
+<!-- Daily Notifications -->
+<div class="flex items-center justify-between py-base border-b border-surface-container">
+<span class="font-body-md text-on-surface">Daily notifications</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-outline-variant rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Sounds from the app -->
+<div class="flex items-center justify-between py-base border-b border-surface-container">
+<span class="font-body-md text-on-surface">Sounds from the app</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-outline-variant rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Streak Reminder -->
+<div class="flex items-center justify-between py-base">
+<span class="font-body-md text-on-surface">Streak Reminder</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-outline-variant rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="flex items-center justify-end gap-md pt-lg">
+<button class="px-xl py-3 border border-outline text-on-surface font-label-md rounded-xl hover:bg-surface-container transition-all active:scale-95">Cancel</button>
+<button class="px-xl py-3 bg-primary text-on-primary font-label-md rounded-xl soft-shadow hover:bg-primary-container transition-all active:scale-95">Save Changes</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface dark:bg-surface-dim border-t border-outline-variant">
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-[10px]">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined">school</span>
+<span class="font-label-md text-[10px]">Learn</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-md text-[10px]">Profile</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl p-2 active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-label-md text-[10px]">Settings</span>
+</div>
+</nav>
+<script>
+        // Micro-interaction for toggles
+        document.querySelectorAll('input[type="checkbox"]').forEach(toggle => {
+            toggle.addEventListener('change', function() {
+                const parent = this.parentElement.parentElement;
+                if(this.checked) {
+                    console.log(`Setting enabled: ${parent.querySelector('span').innerText}`);
+                } else {
+                    console.log(`Setting disabled: ${parent.querySelector('span').innerText}`);
+                }
+            });
+        });
+
+        // Hover effect for side nav items
+        const sideNavItems = document.querySelectorAll('nav .flex.items-center');
+        sideNavItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                if(!item.classList.contains('text-primary')) {
+                    item.style.backgroundColor = 'var(--surface-container-high)';
+                }
+            });
+            item.addEventListener('mouseleave', () => {
+                if(!item.classList.contains('text-primary')) {
+                    item.style.backgroundColor = 'transparent';
+                }
+            });
+        });
+    </script>
+</body></html>

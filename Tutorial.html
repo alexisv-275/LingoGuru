@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LingoGuru Tutorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style data-purpose="custom-utilities">
+    /* Custom styles that are tricky to do pure tailwind */
+    body {
+      background-color: #F1F4F9;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center font-sans antialiased text-gray-800 relative p-4">
+<!-- BEGIN: SkipNavigation -->
+<header class="absolute top-0 w-full p-6 flex justify-end">
+<a aria-label="Skip tutorial" class="text-[#3E527B] hover:text-[#2A3958] font-medium transition-colors flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-[#5B75EE] rounded px-2 py-1" href="Modulos.html">
+      Skip
+      <svg aria-hidden="true" class="h-4 w-4" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</header>
+<!-- END: SkipNavigation -->
+<!-- BEGIN: MainContent -->
+<main aria-labelledby="tutorial-title" class="bg-white rounded-[2rem] shadow-xl w-full max-w-3xl p-8 md:p-16 flex flex-col items-center text-center relative overflow-hidden" id="main-content">
+<!-- Tutorial Image/Illustration -->
+<figure aria-hidden="true" class="mb-8 relative">
+<img alt="" class="w-32 h-32 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4QE_zFJGbKkniE1f-1TXPRcwWk9CTyd3IU-3AAGumrSlZ99lwMaNGX7i_aSLqsZEBwrfsGRzwMOtlOLemW1IiPDwdT7E9ZJ6Vzudl_U52BJwsS8pVtvStuB3V6FJ2dZ66USb05zqs9gniRyrjG-FIeVw8pxNNpizJHe3E67vJki_4tZ-s9dtIm5jNFQMEUXGcHv1OV4Vbn1iJGrrHogCenZi8XY4I8tJUR8-eCiV0rm1mI3M4MIqcJ-EiHlFyEcTMSLNkXeLg_9ss"/>
+<!-- Simulated owl icon (using an emoji for now as placeholder for the exact SVG) -->
+<div class="absolute inset-0 flex items-center justify-center text-6xl">
+        🦉
+      </div>
+<!-- Simulated books badge -->
+<div class="absolute bottom-0 right-0 bg-[#FFF5EE] rounded-full w-10 h-10 flex items-center justify-center shadow-sm">
+        📚
+      </div>
+</figure>
+<!-- Tutorial Text Content -->
+<header class="mb-6">
+<h1 class="text-3xl md:text-4xl font-bold text-[#1A253C] mb-4 tracking-tight" id="tutorial-title">Learn at your own pace</h1>
+<p class="text-[#8492A6] text-lg max-w-lg mx-auto leading-relaxed">
+        LingoGuru adapts to your level and learning pace. Each lesson lasts just 5 minutes, making it perfect for your daily routine.
+      </p>
+</header>
+<!-- Optional Video Section (Hidden visually in the design, but requested in prompt) -->
+<section aria-labelledby="video-title" class="w-full max-w-md mx-auto mb-8 text-left sr-only focus-within:not-sr-only">
+<h2 class="sr-only" id="video-title">Tutorial Video</h2>
+<div class="rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
+<video class="w-full aspect-video" controls="" poster="https://placehold.co/640x360?text=Video+Placeholder">
+<source src="#" type="video/mp4"/>
+<track default="" kind="subtitles" label="English" src="#" srclang="en"/>
+          Your browser does not support the video tag.
+        </video>
+</div>
+<details class="mt-2 text-sm text-gray-600">
+<summary class="cursor-pointer hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#5B75EE] rounded px-1">View Full Transcript</summary>
+<div class="mt-2 p-3 bg-gray-50 rounded border border-gray-100">
+<p>Welcome to LingoGuru. In this app, you can learn at your own pace. Our lessons are designed to be quick and easy, taking only 5 minutes of your day. This fits perfectly into any busy schedule. Let's get started!</p>
+</div>
+</details>
+</section>
+<!-- Pagination Dots -->
+<nav aria-label="Tutorial progress" class="flex items-center justify-center gap-2 mb-10">
+<span aria-current="step" class="block w-6 h-2 rounded-full bg-[#5B75EE]">
+<span class="sr-only">Step 1 of 3</span>
+</span>
+<span class="block w-2 h-2 rounded-full bg-[#E5E9F2]">
+<span class="sr-only">Step 2 of 3</span>
+</span>
+<span class="block w-2 h-2 rounded-full bg-[#E5E9F2]">
+<span class="sr-only">Step 3 of 3</span>
+</span>
+</nav>
+<!-- Action Buttons -->
+<footer class="flex items-center justify-center gap-4 w-full max-w-md mx-auto">
+<button aria-disabled="true" class="flex-1 py-4 px-6 rounded-full border border-[#E5E9F2] text-[#A0AEC0] font-semibold text-lg transition-colors cursor-not-allowed focus:outline-none" disabled="" type="button">
+        Back
+      </button>
+<button class="flex-1 py-4 px-6 rounded-full bg-[#5B75EE] hover:bg-[#4A63D9] text-white font-semibold text-lg shadow-[0_4px_14px_0_rgba(91,117,238,0.39)] transition-all transform hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-[#5B75EE]/50" type="button">
+        Next
+      </button>
+</footer>
+</main>
+<!-- END: MainContent -->
+</body></html>

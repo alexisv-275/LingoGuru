@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LingoGuru - Learn English</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style data-purpose="background-shapes">
+    /* Custom background shapes for visual flair */
+    .bg-shape-top-right {
+      position: absolute;
+      top: -150px;
+      right: -150px;
+      width: 500px;
+      height: 500px;
+      background-color: #f0f4ff; /* Light blue */
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .bg-shape-bottom-left {
+      position: absolute;
+      bottom: -150px;
+      left: -150px;
+      width: 400px;
+      height: 400px;
+      background-color: #fff5eb; /* Light orange */
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .bg-shape-middle-left {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      width: 150px;
+      height: 150px;
+      background-color: #eafaf1; /* Light green */
+      border-radius: 50%;
+      z-index: -1;
+    }
+  </style>
+<style data-purpose="accessibility">
+    /* High contrast focus states for accessibility */
+    button:focus-visible, a:focus-visible {
+      outline: 4px solid #1d4ed8; /* blue-700 */
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body class="bg-white min-h-screen relative overflow-hidden flex flex-col justify-center items-center font-sans text-gray-800">
+<!-- Background decorative shapes -->
+<div aria-hidden="true" class="bg-shape-top-right"></div>
+<div aria-hidden="true" class="bg-shape-bottom-left"></div>
+<div aria-hidden="true" class="bg-shape-middle-left"></div>
+<!-- BEGIN: MainContent -->
+<main class="relative z-10 max-w-2xl mx-auto px-6 py-12 text-center flex flex-col items-center">
+<!-- Mascot Section -->
+<section aria-labelledby="mascot-heading" class="mb-8">
+<h2 class="sr-only" id="mascot-heading">LingoGuru Mascot</h2>
+<!-- The blue owl mascot -->
+<img alt="LingoGuru Blue Owl Mascot" class="w-32 h-auto mx-auto drop-shadow-md object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcAbgT8dl1flLji9hEmkYeacIAB7Fd_If_OtupY3_5pYz0vQh8DWXVivg7AWYtsi5c6-dEL_El9CdUOWzGb3DfW_e8sIxHpYnNi6vV8EnorItPKXcsATrlMMg22CV3Q7AxxfyQ6z1IJfTrrCfUWbP2n0Gd-mtXVm3UcnV3kBPOM4R6jqmvTHOcVXRVJx8AQDMth8_uH99uE16dyhBGbr9PerLS1ycJyo5mW4NjbFb4WdEUx2Qi6JIaeBkXDdTtJfDy6f9iGVJcIZi5" style="clip-path: circle(35% at 50% 30%); width: 250px; height: 250px;"/>
+</section>
+<!-- Header Section -->
+<header class="mb-6">
+<h1 class="text-4xl md:text-5xl font-extrabold text-[#1a1b2e] mb-4 tracking-tight">
+        LingoGuru
+      </h1>
+<p class="text-lg md:text-xl text-gray-500 max-w-md mx-auto leading-relaxed">
+        Learn English in a fun and effective way. Get one step closer to fluency every day!
+      </p>
+</header>
+<!-- Action Section -->
+<section aria-label="Call to action">
+<a href="Tutorial.html" class="group inline-flex items-center justify-center bg-[#4f75ff] hover:bg-[#4364db] text-white font-semibold py-4 px-10 rounded-full shadow-[0_8px_20px_-6px_rgba(79,117,255,0.6)] transition-all duration-300 transform hover:-translate-y-1 focus:ring-4 focus:ring-blue-300 focus:outline-none w-full sm:w-auto text-lg" data-purpose="get-started-button">
+        Get started for free
+        <!-- Right arrow icon -->
+<svg class="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</a>
+</section>
+</main>
+<!-- END: MainContent -->
+</body></html>

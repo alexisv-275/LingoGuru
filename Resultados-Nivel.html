@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LingoGuru - Level Results</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#c4c5d7",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-low": "#f3f3f6",
+                    "surface-container": "#eeeef0",
+                    "tertiary-container": "#a46700",
+                    "outline": "#747686",
+                    "surface-container-highest": "#e2e2e5",
+                    "on-tertiary-fixed": "#2b1700",
+                    "surface-dim": "#dadadc",
+                    "primary-fixed": "#dde1ff",
+                    "background": "#f9f9fc",
+                    "tertiary-fixed": "#ffddb9",
+                    "surface-bright": "#f9f9fc",
+                    "on-primary-fixed-variant": "#0435be",
+                    "inverse-on-surface": "#f0f0f3",
+                    "primary-container": "#4a69ed",
+                    "primary": "#2c4ed3",
+                    "on-surface-variant": "#444654",
+                    "surface-container-high": "#e8e8ea",
+                    "primary-fixed-dim": "#b9c3ff",
+                    "on-primary": "#ffffff",
+                    "secondary": "#006d37",
+                    "error": "#ba1a1a",
+                    "surface": "#f9f9fc",
+                    "surface-variant": "#e2e2e5",
+                    "on-primary-fixed": "#001257",
+                    "on-secondary-fixed-variant": "#005228",
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#6bfe9c",
+                    "tertiary-fixed-dim": "#ffb961",
+                    "on-error": "#ffffff",
+                    "tertiary": "#835100",
+                    "on-tertiary-container": "#fffbff",
+                    "on-primary-container": "#fffbff",
+                    "surface-tint": "#2f50d6",
+                    "on-surface": "#1a1c1e",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#4ae183",
+                    "secondary-fixed": "#6bfe9c",
+                    "on-secondary-container": "#00743a",
+                    "on-tertiary-fixed-variant": "#663e00",
+                    "on-background": "#1a1c1e",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#b9c3ff",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#00210c",
+                    "inverse-surface": "#2f3133"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "base": "8px",
+                    "xs": "4px",
+                    "sm": "12px",
+                    "lg": "48px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "title-md": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f9f9fc;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .results-card-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .animate-pop {
+            animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        @keyframes pop {
+            0% { transform: scale(0.9); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface shadow-sm sticky top-0 z-50">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-base w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-xs">
+<span class="font-display-lg text-[24px] font-extrabold text-primary">LingoGuru</span>
+</div>
+<div class="flex items-center gap-md">
+<button class="text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+<span class="material-symbols-outlined">help</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+<span class="material-symbols-outlined">home</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="flex-grow flex items-center justify-center p-margin-mobile md:p-lg">
+<!-- Results Container -->
+<div class="w-full max-w-4xl bg-surface-container-lowest rounded-[32px] results-card-shadow overflow-hidden animate-pop">
+<div class="p-md md:p-xl flex flex-col items-center text-center space-y-md">
+<!-- Header Stats -->
+<div>
+<h1 class="font-display-lg text-primary text-[80px] md:text-[96px] leading-none mb-sm">82%</h1>
+<h2 class="font-headline-lg text-on-surface">Great job! Keep it up, and you'll go far.</h2>
+<p class="font-body-md text-on-surface-variant mt-xs">Level 4 · Verb To Be</p>
+</div>
+<!-- Bento Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md w-full mt-lg">
+<!-- Correct -->
+<div class="bg-[#E8F5E9] p-md rounded-xl flex flex-col items-center justify-center space-y-xs transition-transform hover:scale-[1.02]">
+<div class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="text-[32px] font-bold text-secondary">4</span>
+<span class="font-label-md text-secondary/80">Correct</span>
+</div>
+<!-- Incorrect -->
+<div class="bg-[#FFEBEE] p-md rounded-xl flex flex-col items-center justify-center space-y-xs transition-transform hover:scale-[1.02]">
+<div class="w-10 h-10 bg-error rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">cancel</span>
+</div>
+<span class="text-[32px] font-bold text-error">1</span>
+<span class="font-label-md text-error/80">Incorrect</span>
+</div>
+<!-- Average Time -->
+<div class="bg-[#FFF8E1] p-md rounded-xl flex flex-col items-center justify-center space-y-xs transition-transform hover:scale-[1.02]">
+<div class="w-10 h-10 bg-[#FFB300] rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">timer</span>
+</div>
+<span class="text-[32px] font-bold text-[#FF8F00]">12s</span>
+<span class="font-label-md text-[#FF8F00]/80">Average time</span>
+</div>
+</div>
+<!-- Review Section -->
+<div class="w-full text-left pt-md border-t border-surface-container">
+<h3 class="font-label-md text-on-surface-variant uppercase tracking-wider mb-md">To Review</h3>
+<div class="space-y-sm">
+<!-- Review Item 1 -->
+<div class="flex flex-col md:flex-row items-center gap-sm md:gap-md group">
+<div class="w-full md:flex-1 bg-[#FFEBEE] text-error p-base px-md rounded-full font-body-md">
+                                She am a teacher.
+                            </div>
+<span class="material-symbols-outlined text-outline-variant shrink-0 group-hover:text-primary transition-colors">arrow_forward</span>
+<div class="w-full md:flex-1 bg-[#E8F5E9] text-secondary p-base px-md rounded-full font-body-md font-bold">
+                                She is a teacher.
+                            </div>
+</div>
+<!-- Review Item 2 -->
+<div class="flex flex-col md:flex-row items-center gap-sm md:gap-md group">
+<div class="w-full md:flex-1 bg-[#FFEBEE] text-error p-base px-md rounded-full font-body-md">
+                                They is my friends.
+                            </div>
+<span class="material-symbols-outlined text-outline-variant shrink-0 group-hover:text-primary transition-colors">arrow_forward</span>
+<div class="w-full md:flex-1 bg-[#E8F5E9] text-secondary p-base px-md rounded-full font-body-md font-bold">
+                                They are my friends.
+                            </div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col md:flex-row w-full gap-md pt-lg">
+<button class="flex-1 border-2 border-outline-variant hover:border-primary text-on-surface font-title-md py-sm rounded-xl transition-all active:scale-95">
+                        Repeat the level
+                    </button>
+<button class="flex-1 bg-primary hover:bg-primary-container text-white font-title-md py-sm rounded-xl shadow-lg hover:shadow-xl transition-all active:scale-95 flex items-center justify-center gap-xs">
+                        Next level
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Decoration -->
+<div class="fixed bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-tertiary opacity-20"></div>
+<script>
+        // Simple micro-interaction for stats cards
+        document.querySelectorAll('.rounded-xl').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const icon = card.querySelector('.material-symbols-outlined');
+                if(icon) icon.style.transform = 'rotate(10deg) scale(1.1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                const icon = card.querySelector('.material-symbols-outlined');
+                if(icon) icon.style.transform = 'rotate(0deg) scale(1)';
+            });
+        });
+
+        // Add a subtle parallax effect to the main card
+        document.addEventListener('mousemove', (e) => {
+            const card = document.querySelector('.animate-pop');
+            if (window.innerWidth > 768) {
+                const x = (window.innerWidth / 2 - e.pageX) / 50;
+                const y = (window.innerHeight / 2 - e.pageY) / 50;
+                card.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+            }
+        });
+    </script>
+</body></html>

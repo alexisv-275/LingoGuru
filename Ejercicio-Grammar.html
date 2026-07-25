@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LingoGuru - Exercise</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f3f3f6",
+                    "secondary-container": "#6bfe9c",
+                    "surface-tint": "#2f50d6",
+                    "on-tertiary-fixed": "#2b1700",
+                    "surface-variant": "#e2e2e5",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#eeeef0",
+                    "outline": "#747686",
+                    "primary-fixed": "#dde1ff",
+                    "on-primary-fixed-variant": "#0435be",
+                    "tertiary-fixed-dim": "#ffb961",
+                    "surface-bright": "#f9f9fc",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#444654",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#4ae183",
+                    "surface-container-highest": "#e2e2e5",
+                    "on-secondary-fixed": "#00210c",
+                    "primary-container": "#4a69ed",
+                    "tertiary-fixed": "#ffddb9",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#b9c3ff",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#a46700",
+                    "on-primary-fixed": "#001257",
+                    "inverse-surface": "#2f3133",
+                    "on-tertiary-container": "#fffbff",
+                    "on-secondary-fixed-variant": "#005228",
+                    "surface": "#f9f9fc",
+                    "outline-variant": "#c4c5d7",
+                    "primary": "#2c4ed3",
+                    "on-primary-container": "#fffbff",
+                    "secondary": "#006d37",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#6bfe9c",
+                    "background": "#f9f9fc",
+                    "on-background": "#1a1c1e",
+                    "tertiary": "#835100",
+                    "primary-fixed-dim": "#b9c3ff",
+                    "on-surface": "#1a1c1e",
+                    "on-secondary-container": "#00743a",
+                    "surface-container-high": "#e8e8ea",
+                    "surface-dim": "#dadadc",
+                    "inverse-on-surface": "#f0f0f3",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#663e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "xl": "80px",
+                    "sm": "12px",
+                    "lg": "48px",
+                    "base": "8px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "title-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg-mobile": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "title-md": [
+                            "20px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.02em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "36px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-background min-h-screen flex flex-col font-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface-dim font-title-md text-title-md sticky top-0 z-50 flex justify-between items-center w-full px-md h-16 shadow-sm">
+<div class="flex items-center gap-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A cute blue owl mascot wearing glasses and a graduation cap, 3d rendered style, bright and friendly, white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMvSYB1-ku1HhB47rRk6uYXPB5TQ5Vxn3lGC_bUNQfq_JLjLjPQktMryHORwx1ziJ3_E1vg-02UNj9MNrJ-vjlOJhqCmacuwBmjRDlSNKsjzCnkf0WQ3nyj1L6A3HQvMkowGNfqYXtTIdz3twJgiDYSQNsHX90MoyBtdlIHpPWYl1keqhJL3nmzuDeLUNpqSJM7vwlkOJzCYAOuDAU3flqboEDj9-0dfcnyfSyx9hax-bwxtQkd5f0SHZ5b04SlB7iIAtBZ_BlJa2l"/>
+</div>
+<span class="font-headline-lg text-headline-lg font-black text-primary dark:text-primary-fixed-dim">LingoGuru</span>
+</div>
+<div class="flex items-center gap-sm">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors text-on-surface-variant dark:text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined">help_outline</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors text-on-surface-variant dark:text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined">home</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors text-on-surface-variant dark:text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-colors text-on-surface-variant dark:text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center p-md md:p-margin-desktop w-full">
+<!-- Exercise Container -->
+<div class="w-full max-w-4xl flex flex-col gap-md"><!-- Header Area: Progress, Timer, Controls (Kept outside) -->
+<div class="flex items-center justify-between gap-md">
+<div class="flex items-center gap-sm">
+<button class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary hover:bg-surface-container transition-colors shadow-sm border border-surface-variant active:scale-95">
+<span class="material-symbols-outlined text-[24px]" data-icon="pause">pause</span>
+</button>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Grammar</span>
+<span class="text-sm text-outline">Exercise 3 of 10</span>
+</div>
+</div>
+<div class="flex-grow flex items-center gap-sm px-md max-w-xl mx-auto">
+<div class="flex-grow h-2 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-3/4 transition-all duration-1000 ease-linear"></div>
+</div>
+</div>
+<div class="flex items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-2 font-title-md text-title-md shadow-sm">
+<span class="material-symbols-outlined mr-xs text-[20px]" data-icon="timer">timer</span>
+<span>28</span>
+</div>
+</div>
+<!-- New White Container for Exercise Content -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-md md:p-xl flex flex-col gap-lg mt-md">
+<!-- Question Area -->
+<div class="flex flex-col items-center text-center gap-md py-md">
+<span class="font-label-md text-label-md text-primary bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full uppercase tracking-wider">Complete the Sentence</span>
+<h1 class="font-display-lg text-display-lg text-on-surface mt-md">
+                    She <span class="inline-block w-32 border-b-4 border-outline-variant mx-2 translate-y-2"></span> a teacher.
+                </h1>
+</div>
+<!-- Options Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md max-w-3xl mx-auto w-full">
+<button class="bg-surface-container-lowest border border-outline-variant hover:border-primary focus:border-primary focus:ring-2 focus:ring-primary-fixed rounded-xl py-lg font-title-md text-title-md text-on-surface transition-all active:scale-95 shadow-sm">
+                    am
+                </button>
+<button class="bg-surface-container-lowest border border-outline-variant hover:border-primary focus:border-primary focus:ring-2 focus:ring-primary-fixed rounded-xl py-lg font-title-md text-title-md text-on-surface transition-all active:scale-95 shadow-sm">
+                    is
+                </button>
+<button class="bg-surface-container-lowest border border-outline-variant hover:border-primary focus:border-primary focus:ring-2 focus:ring-primary-fixed rounded-xl py-lg font-title-md text-title-md text-on-surface transition-all active:scale-95 shadow-sm">
+                    are
+                </button>
+<button class="bg-surface-container-lowest border border-outline-variant hover:border-primary focus:border-primary focus:ring-2 focus:ring-primary-fixed rounded-xl py-lg font-title-md text-title-md text-on-surface transition-all active:scale-95 shadow-sm">
+                    be
+                </button>
+</div>
+<!-- Footer Action -->
+<div class="flex justify-end mt-md pt-lg border-t border-surface-variant w-full">
+<button class="bg-primary text-on-primary font-title-md text-title-md px-xl py-4 rounded-xl shadow-[0_4px_14px_0_rgba(44,78,211,0.39)] hover:bg-on-primary-fixed-variant transition-colors active:scale-95 flex items-center gap-sm">
+                    Check
+                    <span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+</button>
+</div>
+</div></div>
+</main>
+</body></html>
